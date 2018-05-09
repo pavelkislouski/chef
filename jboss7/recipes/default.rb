@@ -7,12 +7,10 @@
 # All rights reserved - Do Not Redistribute
 #
 
-#include_recipe 'apt'
 include_recipe 'java'
 
 user node['jboss5']['jboss_user'] do
   comment 'jboss User'
-#  home node['jboss5']['jboss_home']
   system true
   shell '/bin/false'
 end
