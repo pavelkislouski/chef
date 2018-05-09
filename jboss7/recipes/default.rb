@@ -1,11 +1,9 @@
 #
-# Cookbook Name:: jboss5
+# Cookbook:: jboss7
 # Recipe:: default
 #
-# Copyright (C) 2014 Andrew DuFour
-#
-# All rights reserved - Do Not Redistribute
-#
+# Copyright:: 2018, 
+# Pavel Kislouski
 
 include_recipe 'java'
 
