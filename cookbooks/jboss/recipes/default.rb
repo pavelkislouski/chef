@@ -56,6 +56,9 @@ systemd_unit 'jboss.service' do
   action [ :create, :enable, :start]
 end
 
+service 'jboss' do
+  action :start
+end
 
 #server.xml copy from templates
 data = data_bag_item('confeg','jb_port')
@@ -78,5 +81,3 @@ end
 service 'jboss' do
   action :restart
 end
-
-
